@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="frontend_1.css">
+</head>
+<body>
+    <div id="heading">
+        <h1>English Library/Explore and share</h1>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h3>This Side of Paradise</h3>
+            <h5> F. Fitzgerald</h5>
+            <p>This Side of Paradise is a novel by F. Scott Fitzgerald, first published in 1920. It is considered a classic of American literature and is often seen as a coming-of-age story.</p>
+            <button id="deletebutton" onclick="del(event)">Delete</button>
+            <a href="https://en.wikipedia.org/wiki/This_Side_of_Paradise" id="action">Reference</a>
+        </div>
+        <div class="box">
+            <h3>The Sword of Conan</h3>
+            <h5>  Robert E. Howard</h5>
+            <p>Savage Sword of Conan was a black-and-white magazine-format comic book series published by Marvel Comics from 1974 to 1995. The series featured Conan the Barbarian and other characters created by Robert E. Howard.</p>
+            <button id="deletebutton" onclick="del(event)">Delete</button>
+            <a href="https://en.wikipedia.org/wiki/The_Sword_of_Conan" id="action">Reference</a>
+        </div>
+        <div class="box">
+            <h3>The Jungle Book</h3>
+            <h5>  Rudyard Kipling</h5>
+            <p>A major theme in the book is abandonment followed by fostering, as in the life of Mowgli, echoing Kipling's own childhood. The theme is echoed in the triumph of protagonists including Rikki-Tikki-Tavi and The White Seal over their enemies, as well as Mowgli's. Another important theme is of law and freedom; the stories are not about animal behaviour, still less about the Darwinian struggle for survival, but about human archetypes in animal form.</p>
+            <button id="deletebutton" onclick="del(event)">Delete</button>
+            <a href="https://en.wikipedia.org/wiki/The_Jungle_Book" id="action">Reference</a>
+        </div>
+    </div>
+    <div id="outeralert"> </div>
+    <div id="alertmessage">
+        <h2>Add Book</h2>
+        <!-- <form> -->
+            <input type="text" id="bookname" placeholder="Book Name">
+            <input type="text" id="authorname" placeholder="Author Name">
+            <textarea id="description" cols="30" rows="10" placeholder="Description of this Book"></textarea>
+            <input type="text" id="booklink" placeholder="Book Link">
+            <button id="add" onclick="add(event)">Add</button>
+            <button id="cancel" onclick="cancel(event)">Cancel</button>
+        <!-- </form> -->
+    </div>
+    <button id="newaddbook" onclick="newaddbook()">Add</button>
+    <div id="homes">
+        <a href="index.html" >Home</a>
+    </div>
+    <!-- <button onclick="hhhh(event)">hhhh</button> -->
+    <script src="frontend_1.js">
+
+    </script>
+</body>
+</html>
